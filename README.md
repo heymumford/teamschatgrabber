@@ -58,6 +58,22 @@ poetry shell
 pip install -r requirements.txt
 ```
 
+### Option 3: Standalone Windows Executable
+
+A standalone Windows executable can be created using PyInstaller:
+
+1. Install PyInstaller:
+```bash
+pip install pyinstaller
+```
+
+2. Build the executable:
+```bash
+python build_exe.py
+```
+
+3. The executable will be created in the `dist` folder as `TeamsChatGrabber.exe`
+
 ## Usage
 
 ### Quick Start
@@ -86,6 +102,18 @@ teamschatgrab
 
 # If using pip
 python main.py
+```
+
+#### Option 3: Windows Executable
+
+If you've built the standalone executable:
+
+```
+# Simply double-click the executable file
+dist/TeamsChatGrabber.exe
+
+# Or run from command line
+dist\TeamsChatGrabber.exe
 ```
 
 ### Command-Line Options
